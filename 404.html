@@ -15,24 +15,35 @@
 </head>
 <body>
   <div class="opening" id="opening">
-    <div
-      class="opening-preview-card"
-      id="openingCard"
-      role="button"
-      tabindex="0"
-      aria-label="Abrir invitación de Francesco Monachello y Sra."
-    >
-      <img
-        class="opening-preview-image"
-        src="assets/portada-propuesta.png"
-        alt="Invitación especial para Francesco Monachello y Sra."
-      >
-      <button
-        id="openInvitation"
-        class="opening-preview-button"
-        type="button"
-        aria-label="Abrir invitación"
-      ></button>
+    <div class="dynamic-cover" id="openingCard" role="button" tabindex="0" aria-label="Abrir invitación">
+      <div class="dynamic-cover-inner">
+        <img class="cover-flower cover-flower-top" src="assets/cover-floral-left.png" alt="">
+        <img class="cover-flower cover-flower-bottom" src="assets/cover-floral-right.png" alt="">
+
+        <div class="cover-copy">
+          <p class="cover-kicker">INVITACIÓN ESPECIAL PARA</p>
+          <div class="cover-ornament"><span></span><b>❦</b><span></span></div>
+
+          <h1>
+            <span id="coverGuestName">Francesco Monachello</span>
+            <em id="coverGuestTreatment">y Sra.</em>
+          </h1>
+
+          <div class="cover-ornament"><span></span><b>❦</b><span></span></div>
+
+          <p class="cover-message">
+            Laura y Jorge tienen el honor de invitarlos<br>
+            a la celebración de su matrimonio.
+          </p>
+
+          <p class="cover-seats">
+            Invitación reservada para
+            <strong><span id="coverSeats">2</span> <span id="coverSeatsWord">personas</span></strong>
+          </p>
+
+          <button id="openInvitation" type="button">Abrir invitación</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -45,16 +56,17 @@
     <section class="hero" id="invitacion">
       <div class="guest-strip">
         <span>Preparada especialmente para</span>
-        <strong>Francesco Monachello y Sra.</strong>
-        <small>2 cupos</small>
+        <strong id="pageGuestName">Francesco Monachello y Sra.</strong>
+        <small><span id="pageSeats">2</span> cupos</small>
       </div>
 
-      <picture class="main-card">
+      <div class="main-card invitation-image-wrap">
         <img
-          src="assets/invitacion-francesco.png"
-          alt="Invitación de boda de Laura y Jorge para el sábado 19 de septiembre de 2026. Ceremonia religiosa en la Parroquia Santa Teresita del Niño Jesús a las 6:15 p. m. y recepción en Hilton Garden Inn Barranquilla a las 8:00 p. m."
+          src="assets/invitacion-base.png"
+          alt="Invitación de boda de Laura y Jorge para el sábado 19 de septiembre de 2026."
         >
-      </picture>
+        <span class="card-seat-number" id="cardSeats">2</span>
+      </div>
 
       <div class="quick-actions" aria-label="Acciones de la invitación">
         <a href="laura-y-jorge.ics" download>Agregar al calendario</a>
@@ -103,6 +115,7 @@
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="invitados.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

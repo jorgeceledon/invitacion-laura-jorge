@@ -1041,3 +1041,228 @@ body.ready .opening-copy > *:nth-child(6) { animation-delay: .50s; }
     border-radius: 10px;
   }
 }
+
+
+/* ===== Portada dinámica para múltiples invitados ===== */
+.opening {
+  padding: 18px;
+  background:
+    radial-gradient(circle at 50% 10%, rgba(67,120,82,.24), transparent 38%),
+    linear-gradient(135deg, #0d3d22, #174d2b 58%, #0b321c);
+}
+
+.dynamic-cover {
+  width: min(1000px, 96vw);
+  cursor: pointer;
+  border-radius: 18px;
+  box-shadow: 0 35px 100px rgba(0,0,0,.38);
+  outline: none;
+}
+
+.dynamic-cover:focus-visible {
+  box-shadow: 0 0 0 4px rgba(234,199,111,.75), 0 35px 100px rgba(0,0,0,.38);
+}
+
+.dynamic-cover-inner {
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(255,255,255,.76), transparent 42%),
+    linear-gradient(180deg, #fffefb, #fbf6ec);
+  border: 2px solid rgba(223,184,84,.9);
+}
+
+.dynamic-cover-inner::before {
+  content: "";
+  position: absolute;
+  inset: 28px;
+  z-index: 1;
+  border: 1px solid rgba(201,155,53,.72);
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.cover-flower {
+  position: absolute;
+  z-index: 2;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.cover-flower-top {
+  top: 48px;
+  left: 48px;
+  width: min(260px, 27vw);
+}
+
+.cover-flower-bottom {
+  right: 44px;
+  bottom: 44px;
+  width: min(250px, 26vw);
+}
+
+.cover-copy {
+  position: relative;
+  z-index: 3;
+  width: min(650px, 70%);
+  min-height: 680px;
+  margin: 0 auto;
+  padding: 84px 24px 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cover-kicker {
+  margin: 0 0 12px;
+  color: var(--green);
+  font-size: .84rem;
+  font-weight: 700;
+  letter-spacing: .24em;
+}
+
+.cover-ornament {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0 18px;
+  color: var(--gold);
+}
+
+.cover-ornament span {
+  width: 110px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.cover-ornament b {
+  font-size: 1rem;
+}
+
+.cover-copy h1 {
+  width: 100%;
+  margin: 0;
+  color: #b88723;
+  font-size: clamp(2.4rem, 6vw, 5.4rem);
+  font-weight: 400;
+  line-height: .92;
+  text-wrap: balance;
+}
+
+.cover-copy h1 span,
+.cover-copy h1 em {
+  display: block;
+}
+
+.cover-copy h1 em {
+  margin-top: 12px;
+  font-size: .58em;
+  font-weight: 400;
+}
+
+.cover-message {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  line-height: 1.6;
+}
+
+.cover-seats {
+  margin: 24px 0 0;
+  padding: 12px 24px;
+  border: 1px solid rgba(200,155,53,.65);
+  border-radius: 10px;
+  background: rgba(255,255,255,.76);
+  color: var(--green);
+  box-shadow: 0 10px 24px rgba(83,70,36,.08);
+}
+
+.cover-seats strong {
+  color: var(--green-dark);
+}
+
+.dynamic-cover #openInvitation {
+  min-width: 260px;
+  margin: 26px auto 0;
+  padding: 15px 28px;
+  border: 2px solid var(--gold);
+  border-radius: 999px;
+  color: white;
+  background: linear-gradient(180deg, #195b34, #0f4527);
+  font: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 16px 30px rgba(15,69,39,.22);
+}
+
+.invitation-image-wrap {
+  position: relative;
+}
+
+.card-seat-number {
+  position: absolute;
+  left: 50.25%;
+  top: 87.37%;
+  transform: translate(-50%, -50%);
+  color: #4e4b2c;
+  font-family: "DejaVu Serif", Georgia, serif;
+  font-size: clamp(14px, 2.7vw, 31px);
+  font-weight: 400;
+  line-height: 1;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .dynamic-cover-inner,
+  .cover-copy {
+    min-height: 570px;
+  }
+
+  .dynamic-cover-inner::before {
+    inset: 16px;
+  }
+
+  .cover-copy {
+    width: 84%;
+    padding: 74px 10px 44px;
+  }
+
+  .cover-copy h1 {
+    font-size: clamp(2rem, 10vw, 3.65rem);
+  }
+
+  .cover-kicker {
+    font-size: .7rem;
+    letter-spacing: .18em;
+  }
+
+  .cover-flower-top {
+    top: 40px;
+    left: 22px;
+    width: min(160px, 34vw);
+  }
+
+  .cover-flower-bottom {
+    right: 18px;
+    bottom: 48px;
+    width: min(150px, 32vw);
+  }
+
+  .cover-message {
+    font-size: .96rem;
+  }
+
+  .cover-seats {
+    padding: 10px 14px;
+    font-size: .92rem;
+  }
+
+  .dynamic-cover #openInvitation {
+    min-width: 220px;
+  }
+}
