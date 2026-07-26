@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#174d2b">
+  <meta name="description" content="Invitación de boda de Laura y Jorge para Francesco Monachello y Sra.">
+  <meta property="og:title" content="Laura & Jorge — Invitación de boda">
+  <meta property="og:description" content="Invitación para Francesco Monachello y Sra. · 2 cupos">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/invitacion-francesco.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Laura & Jorge — Francesco Monachello y Sra.</title>
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div
+      class="opening-preview-card"
+      id="openingCard"
+      role="button"
+      tabindex="0"
+      aria-label="Abrir invitación de Francesco Monachello y Sra."
+    >
+      <img
+        class="opening-preview-image"
+        src="assets/portada-propuesta.png"
+        alt="Invitación especial para Francesco Monachello y Sra."
+      >
+      <button
+        id="openInvitation"
+        class="opening-preview-button"
+        type="button"
+        aria-label="Abrir invitación"
+      ></button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a href="#invitacion" class="brand" aria-label="Ir a la invitación">LJ</a>
+    <button id="shareButton" type="button" class="share-button" aria-label="Compartir invitación">Compartir</button>
+  </header>
+
+  <main>
+    <section class="hero" id="invitacion">
+      <div class="guest-strip">
+        <span>Preparada especialmente para</span>
+        <strong>Francesco Monachello y Sra.</strong>
+        <small>2 cupos</small>
+      </div>
+
+      <picture class="main-card">
+        <img
+          src="assets/invitacion-francesco.png"
+          alt="Invitación de boda de Laura y Jorge para el sábado 19 de septiembre de 2026. Ceremonia religiosa en la Parroquia Santa Teresita del Niño Jesús a las 6:15 p. m. y recepción en Hilton Garden Inn Barranquilla a las 8:00 p. m."
+        >
+      </picture>
+
+      <div class="quick-actions" aria-label="Acciones de la invitación">
+        <a href="laura-y-jorge.ics" download>Agregar al calendario</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Parroquia+Santa+Teresita+del+Ni%C3%B1o+Jes%C3%BAs+Calle+106+49C-28+Barranquilla" target="_blank" rel="noopener">Ver ceremonia</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Hilton+Garden+Inn+Barranquilla+Carrera+53+100-86" target="_blank" rel="noopener">Ver recepción</a>
+      </div>
+    </section>
+
+    <section class="dress-section">
+      <div class="section-heading">
+        <span>INDICACIONES PARA NUESTROS INVITADOS</span>
+        <h2>Código de vestuario</h2>
+      </div>
+
+      <picture class="dress-card">
+        <img
+          src="assets/dress-code.png"
+          alt="Código de vestuario. Mujeres: vestido elegante de noche; se reservan los colores blanco y negro. Hombres: traje completo; se reserva el color blanco."
+        >
+      </picture>
+    </section>
+
+    <section class="event-summary">
+      <p class="small-label">SÁBADO, 19 DE SEPTIEMBRE DE 2026</p>
+      <h2>Laura &amp; Jorge</h2>
+      <div class="summary-grid">
+        <article>
+          <span>06:15 p. m.</span>
+          <h3>Ceremonia religiosa</h3>
+          <p>Parroquia Santa Teresita del Niño Jesús<br>Calle 106 No. 49C - 28</p>
+        </article>
+        <article>
+          <span>08:00 p. m.</span>
+          <h3>Recepción</h3>
+          <p>Hilton Garden Inn Barranquilla<br>Carrera 53 No. 100 - 86</p>
+        </article>
+      </div>
+      <p class="gift-note">Lluvia de sobres</p>
+      <p class="closing">Será un honor contar con su presencia.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>LJ</strong>
+    <span>Barranquilla, Colombia · 2026</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

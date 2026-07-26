@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Laura y Jorge//Invitacion de boda//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:laura-jorge-20260919@invitacion
+DTSTAMP:20260726T000000Z
+DTSTART;TZID=America/Bogota:20260919T181500
+DTEND;TZID=America/Bogota:20260920T030000
+SUMMARY:Matrimonio de Laura y Jorge
+LOCATION:Parroquia Santa Teresita del Niño Jesús, Calle 106 No. 49C - 28, Barranquilla
+DESCRIPTION:Ceremonia religiosa a las 6:15 p. m. Recepción a las 8:00 p. m. en Hilton Garden Inn Barranquilla, Carrera 53 No. 100 - 86.
+END:VEVENT
+END:VCALENDAR
