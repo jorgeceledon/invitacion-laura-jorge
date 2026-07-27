@@ -28,7 +28,7 @@ button{font:inherit}
 .envelope-card:focus-visible{box-shadow:0 0 0 4px rgba(232,199,117,.72);border-radius:18px}
 .envelope-image{width:100%;height:auto;border-radius:12px;box-shadow:0 26px 90px rgba(0,0,0,.28)}
 .seal-button{position:absolute;left:50%;top:56.7%;transform:translate(-50%,-50%);width:14.6%;aspect-ratio:1/1;border:0;border-radius:50%;background:transparent;cursor:pointer;touch-action:manipulation}
-.envelope-guest{position:absolute;left:50%;top:73.1%;transform:translateX(-50%);width:min(74%,760px);margin:0;text-align:center;color:var(--green-dark);font-size:clamp(1rem,2.4vw,1.9rem);line-height:1.18;text-wrap:balance;text-shadow:0 1px 0 rgba(255,255,255,.42)}
+.envelope-guest{position:absolute;left:50%;top:73.1%;transform:translateX(-50%);width:min(74%,760px);margin:0;padding:.32em .75em;border:1px solid rgba(184,139,44,.45);border-radius:999px;text-align:center;color:var(--green-dark);background:rgba(255,250,237,.9);box-shadow:0 5px 18px rgba(30,55,34,.1);font-size:clamp(1rem,2.4vw,1.9rem);font-weight:600;line-height:1.18;text-wrap:balance;text-shadow:0 1px 0 #fff;backdrop-filter:blur(3px)}
 
 .cover-shell{width:min(1180px,96vw);margin:auto}
 .cover-toolbar{display:flex;justify-content:flex-start;margin:0 auto 14px;width:min(980px,100%)}
@@ -152,22 +152,22 @@ footer strong{color:var(--gold-light);font-size:1.8rem;font-style:italic}footer 
   :root{--header-h:58px}
   .intro-screen{padding:10px}
   .screen-wrap{min-height:calc(100svh - 20px)}
-  .envelope-stage{width:min(1080px,99vw)}
+  .envelope-screen{overflow:hidden;background:radial-gradient(circle at 50% 44%,rgba(40,105,61,.42),transparent 46%),linear-gradient(180deg,#0d3d22 0%,#174d2b 48%,#0d351e 100%)}.envelope-stage{width:min(1080px,99vw);flex:0 1 auto}
   .seal-button{width:16.5%;top:56.6%}
-  .envelope-guest{top:73.4%;width:80%;font-size:clamp(.9rem,4vw,1.2rem)}
+  .envelope-guest{top:73.4%;width:66%;padding:.42em .8em;font-size:clamp(.9rem,4vw,1.2rem)}
   .cover-shell{width:100%}.cover-toolbar{margin-bottom:10px}.ghost-action{font-size:.92rem;padding:9px 12px}
   .cover-card{min-height:610px}.cover-paper{inset:14px;border-radius:18px}.cover-inner-line{inset:28px;border-radius:12px}.cover-monogram{top:40px;width:62px}
   .cover-flower-left{left:44px;top:72px;width:min(88px,22vw)}.cover-flower-right{right:42px;bottom:44px;width:min(92px,22vw)}
   .cover-copy{width:84%;min-height:610px;padding:126px 8px 34px}.cover-kicker{font-size:.66rem;letter-spacing:.15em}.cover-title{font-size:clamp(2.35rem,10.5vw,3.7rem);line-height:.91}.cover-divider{margin:14px 0}.cover-divider span{width:52px}.cover-message{font-size:.92rem;line-height:1.42}.cover-seats{margin-top:14px;padding:10px 13px;font-size:.88rem}.cover-actions{margin-top:18px}.cover-action{min-width:230px;padding:14px 20px}
   .site-header{padding:0 10px}.header-link,.share-button{padding:8px 10px;font-size:.86rem}.brand-button{font-size:1.65rem}
   .invitation-card{padding:12px}.invitation-frame{min-height:0;padding:154px 24px 44px}.invitation-floral{width:37%}.invitation-floral-top{left:18px;top:22px}.invitation-floral-bottom{right:14px;bottom:20px}.invitation-monogram{top:30px;right:26px;width:104px}.parents-grid{gap:16px;margin-bottom:16px;font-size:.76rem;line-height:1.5}.invitation-ornament{margin:16px auto}.invitation-honor{font-size:.92rem}.couple-name{margin:28px -8px 24px;font-size:clamp(4.6rem,22vw,6.2rem)}.wedding-date{font-size:.86rem;line-height:1.4}.invitation-ornament.compact{margin:16px auto}.event-with-icon{grid-template-columns:54px minmax(0,1fr);gap:12px;width:100%}.event-icon{width:54px;height:68px;background-size:580px auto}.church-icon{background-position:-119px -419px}.glasses-icon{background-position:-118px -503px}.event-block h3{font-size:1.02rem}.event-block p{font-size:.9rem}.rain-note{font-size:1rem}.invitation-seats{flex-wrap:wrap;justify-content:center;gap:.25em;margin:0 auto;padding:10px 15px;font-size:.9rem}.invitation-place{margin-top:24px;font-size:.84rem}
-  .dress-section{padding:56px 16px 66px}.dress-section::before{top:176px;bottom:28px;width:calc(100% - 32px);transform:translateX(-50%);border-radius:18px}.section-heading{margin-bottom:28px}.dress-card{width:100%;padding:46px 22px 30px}.dress-kicker{font-size:3rem}.dress-kicker::after{margin:15px auto 18px}.dress-couple-art{width:190px;height:245px;margin-bottom:20px}.dress-options{grid-template-columns:1fr}.dress-option{padding:6px 12px 30px}.dress-option + .dress-option{padding-top:30px;border-top:1px solid rgba(184,139,44,.35);border-left:0}.dress-style{min-height:0;margin:12px 0 18px}.dress-note{margin-top:14px}.dress-floral{width:105px}.dress-floral-top{top:18px;left:18px}.dress-floral-bottom{right:18px;bottom:18px}
-  .summary-grid{grid-template-columns:1fr}.summary-grid article{padding:24px 18px}
+  .dress-section{padding:56px 16px 66px}.dress-section::before{top:176px;bottom:28px;width:calc(100% - 32px);transform:translateX(-50%);border-radius:18px}.section-heading{margin-bottom:28px}.section-heading h2{font-size:clamp(2rem,10vw,2.65rem)}.dress-card{width:100%;padding:46px 22px 30px}.dress-kicker{font-size:3rem}.dress-kicker::after{margin:15px auto 18px}.dress-couple-art{width:190px;height:245px;margin-bottom:20px}.dress-options{grid-template-columns:1fr}.dress-option{padding:6px 12px 30px}.dress-option + .dress-option{padding-top:30px;border-top:1px solid rgba(184,139,44,.35);border-left:0}.dress-style{min-height:0;margin:12px 0 18px}.dress-note{margin-top:14px}.dress-floral{width:76px}.dress-floral-top{top:205px;left:16px}.dress-floral-bottom{right:16px;bottom:18px}
+  .event-summary{padding:56px 16px 64px}.event-summary h2{font-size:clamp(2.8rem,14vw,3.7rem)}.summary-grid{grid-template-columns:1fr}.summary-grid article{padding:24px 18px}.bible-verse{margin-top:38px;padding:34px 18px 28px}.bible-verse p{font-size:1.08rem;line-height:1.65}.bible-verse cite{font-size:.7rem;letter-spacing:.14em}
   footer{flex-direction:column;gap:6px}
 }
 @media (max-width: 420px){
   .seal-button{width:18.2%}
-  .envelope-guest{font-size:.88rem;top:73.5%;width:82%}
+  .envelope-guest{font-size:.88rem;top:73.5%;width:64%}
   .cover-card{min-height:590px}.cover-copy{min-height:590px;padding-top:122px}.cover-monogram{top:40px;width:58px}.cover-flower-left{width:82px;left:40px}.cover-flower-right{width:88px;right:38px;bottom:40px}
   .guest-strip strong{font-size:clamp(1.45rem,8.6vw,2.1rem)}
   .invitation-frame{padding:145px 18px 40px}.invitation-monogram{right:20px;width:92px}.parents-grid{gap:10px;font-size:.7rem}.couple-name{font-size:clamp(4.1rem,21vw,5.5rem)}.invitation-honor br{display:none}.event-with-icon{grid-template-columns:48px minmax(0,1fr);gap:10px}.event-icon{width:48px}
