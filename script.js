@@ -15,7 +15,6 @@
   const shareButton = document.getElementById("shareButton");
   const toast = document.getElementById("toast");
   const invitation = document.getElementById("invitacion");
-  const envelopeImage = document.querySelector(".envelope-image");
 
   function getGuestKey() {
     const params = new URLSearchParams(window.location.search);
@@ -58,8 +57,9 @@
     tr.hidden = !guest.tratamiento;
     document.getElementById("coverSeats").textContent = guest.cupos;
     document.getElementById("coverSeatsWord").textContent = seatsWord;
-    document.getElementById("cardSeatsText").textContent = guest.cupos;
-    document.getElementById("cardSeatsWord").textContent = seatsWord;
+    document.getElementById("pageGuestName").textContent = fullName;
+    document.getElementById("pageSeats").textContent = guest.cupos;
+    document.getElementById("cardSeatsSvg").textContent = guest.cupos;
     document.title = `Laura & Jorge — ${fullName}`;
     const canonicalUrl = `${BASE_URL}?i=${encodeURIComponent(key)}`;
     document.querySelector('meta[name="description"]')?.setAttribute("content", `Invitación de boda de Laura y Jorge para ${fullName}. ${guest.cupos} ${seatsWord}.`);
@@ -69,14 +69,6 @@
   }
 
   const currentGuest = applyGuest();
-  function revealEnvelope() {
-    openingCard?.classList.add("is-ready");
-  }
-  if (envelopeImage?.complete && envelopeImage.naturalWidth > 0) {
-    revealEnvelope();
-  } else {
-    envelopeImage?.addEventListener("load", revealEnvelope, { once: true });
-  }
   activateIntro("envelope");
 
   function showEnvelope(event) {
