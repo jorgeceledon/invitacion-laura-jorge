@@ -8,22 +8,33 @@ const INVITADOS = {
     cupos: 2
   },
 
+   "alberto-zapata": {
+    nombre: "Alberto Zapata",
+    tratamiento: "y Sra.",
+    cupos: 2
+  },
+
+   "julio-cesar-Andrade": {
+    nombre: "Julio Andrade",
+    tratamiento: "",
+    cupos: 2
+  },
+
+   "gabriel-andrade": {
+    nombre: "Gabriel Andrade",
+    tratamiento: "",
+    cupos: 2
+  },
+
+   "diana-andrade": {
+    nombre: "Diana Andrade",
+    tratamiento: "",
+    cupos: 2
+  },
+
    "manuel-rocha": {
     nombre: "Manuel Rocha",
     tratamiento: "y Sra.",
     cupos: 2
   },
-
-  // Ejemplos para copiar y modificar:
-  "juan-perez-familia": {
-    nombre: "Juan Pérez",
-    tratamiento: "y familia",
-    cupos: 4
-  },
-
-  "maria-gomez": {
-    nombre: "María Gómez",
-    tratamiento: "",
-    cupos: 1
-  }
 };
