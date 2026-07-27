@@ -8,6 +8,12 @@ const INVITADOS = {
     cupos: 2
   },
 
+    "manuel-rocha": {
+    nombre: "Manuel Rocha",
+    tratamiento: "y Sra.",
+    cupos: 2
+  },
+
   // Ejemplos para copiar y modificar:
   "juan-perez-familia": {
     nombre: "Juan Pérez",
