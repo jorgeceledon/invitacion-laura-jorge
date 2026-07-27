@@ -15,6 +15,7 @@
   const shareButton = document.getElementById("shareButton");
   const toast = document.getElementById("toast");
   const invitation = document.getElementById("invitacion");
+  const envelopeImage = document.querySelector(".envelope-image");
 
   function getGuestKey() {
     const params = new URLSearchParams(window.location.search);
@@ -68,6 +69,14 @@
   }
 
   const currentGuest = applyGuest();
+  function revealEnvelope() {
+    openingCard?.classList.add("is-ready");
+  }
+  if (envelopeImage?.complete && envelopeImage.naturalWidth > 0) {
+    revealEnvelope();
+  } else {
+    envelopeImage?.addEventListener("load", revealEnvelope, { once: true });
+  }
   activateIntro("envelope");
 
   function showEnvelope(event) {
