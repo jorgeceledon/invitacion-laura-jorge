@@ -10,7 +10,8 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/invitacion-base.png">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="assets/sobre-portada.png" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=48">
   <title>Laura & Jorge — Invitación</title>
 </head>
 <body>
@@ -37,8 +38,8 @@
             <div class="cover-paper"></div>
             <div class="cover-inner-line"></div>
             <img class="cover-monogram" src="assets/monograma-clean.png" alt="Monograma Laura y Jorge">
-            <img class="cover-flower cover-flower-left" src="assets/cover-floral-left.png" alt="">
-            <img class="cover-flower cover-flower-right" src="assets/cover-floral-right.png" alt="">
+            <img class="cover-flower cover-flower-left" src="assets/floral-corner-transparent.png" alt="">
+            <img class="cover-flower cover-flower-right" src="assets/floral-corner-transparent.png" alt="">
             <div class="cover-copy">
               <p class="cover-kicker">INVITACIÓN ESPECIAL PARA</p>
               <h1 class="cover-title">
@@ -66,20 +67,56 @@
 
   <main>
     <section class="hero" id="invitacion">
-      <div class="guest-strip">
-        <span>Preparada especialmente para</span>
-        <strong id="pageGuestName">Francesco Monachello y Sra.</strong>
-        <small><span id="pageSeats">2</span> cupos</small>
-      </div>
-      <div class="main-card invitation-image-wrap">
-        <svg class="invitation-svg" viewBox="0 0 4212 5290" preserveAspectRatio="xMidYMid meet" aria-label="Invitación de boda de Laura y Jorge" role="img">
-          <image href="assets/invitacion-base.png" x="0" y="0" width="4212" height="5290"></image>
-          <text id="cardSeatsSvg" x="2066" y="4584" text-anchor="middle" dominant-baseline="middle" fill="#4e4b2c" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="400">2</text>
-        </svg>
+      <div class="main-card invitation-card" aria-label="Invitación de boda de Laura y Jorge">
+        <img class="invitation-floral invitation-floral-top" src="assets/floral-corner-transparent.png" alt="">
+        <img class="invitation-floral invitation-floral-bottom" src="assets/floral-corner-transparent.png" alt="">
+        <div class="invitation-frame">
+          <img class="invitation-monogram" src="assets/monograma-clean.png" alt="Monograma floral de Laura y Jorge">
+
+          <div class="parents-grid" aria-label="Padres de los novios">
+            <p>Lourdes Pugliese Andrade<br>José Terán Durán</p>
+            <p>Jenny Rocha Osorio<br>Jorge Celedón Espitia</p>
+          </div>
+
+          <div class="invitation-ornament" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+          <p class="invitation-honor">Tienen el honor de invitarlos a<br>la celebración del matrimonio de sus hijos</p>
+
+          <h2 class="couple-name">Laura <em>&amp;</em> Jorge</h2>
+          <p class="wedding-date">Sábado, 19 de septiembre de 2026</p>
+          <div class="invitation-ornament compact" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+
+          <div class="event-block event-with-icon">
+            <span class="event-icon church-icon" aria-hidden="true"></span>
+            <div class="event-copy">
+              <p class="event-time">6:15 p. m.</p>
+              <h3>Ceremonia religiosa</h3>
+              <p>Parroquia Santa Teresita del Niño Jesús</p>
+              <p>Calle 106 No. 49C - 28</p>
+            </div>
+          </div>
+
+          <div class="invitation-ornament compact" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+
+          <div class="event-block event-with-icon">
+            <span class="event-icon glasses-icon" aria-hidden="true"></span>
+            <div class="event-copy">
+              <p class="event-time">8:00 p. m.</p>
+              <h3>Recepción</h3>
+              <p>Hilton Garden Inn Barranquilla</p>
+              <p>Carrera 53 No. 100 - 86</p>
+            </div>
+          </div>
+
+          <div class="invitation-ornament compact" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+          <p class="rain-note">Lluvia de sobres</p>
+          <p class="invitation-seats">Cupo reservado para <strong><span id="cardSeatsText">2</span> <span id="cardSeatsWord">personas</span></strong></p>
+          <p class="invitation-place">Barranquilla, Colombia · 2026</p>
+        </div>
       </div>
 
       <div class="quick-actions" aria-label="Acciones de la invitación">
-        <a href="laura-y-jorge.ics" download>Agregar al calendario</a>
+        <a class="calendar-action" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Matrimonio+de+Laura+y+Jorge&amp;dates=20260919T231500Z%2F20260920T080000Z&amp;ctz=America%2FBogota&amp;details=Ceremonia+religiosa%3A+6%3A15+p.+m.+en+la+Parroquia+Santa+Teresita+del+Ni%C3%B1o+Jes%C3%BAs%2C+Calle+106+No.+49C+-+28.%0A%0ARecepci%C3%B3n%3A+8%3A00+p.+m.+en+Hilton+Garden+Inn+Barranquilla%2C+Carrera+53+No.+100+-+86.%0A%0ASer%C3%A1+un+honor+contar+con+su+presencia.&amp;location=Parroquia+Santa+Teresita+del+Ni%C3%B1o+Jes%C3%BAs%2C+Calle+106+No.+49C+-+28%2C+Barranquilla%2C+Colombia" target="_blank" rel="noopener noreferrer">Agendar en Google Calendar</a>
+        <a class="calendar-action" href="laura-y-jorge.ics" type="text/calendar">Agendar en Apple Calendar</a>
         <a href="https://www.google.com/maps/search/?api=1&query=Parroquia+Santa+Teresita+del+Ni%C3%B1o+Jes%C3%BAs+Calle+106+49C-28+Barranquilla" target="_blank" rel="noopener">Ver ceremonia</a>
         <a href="https://www.google.com/maps/search/?api=1&query=Hilton+Garden+Inn+Barranquilla+Carrera+53+100-86" target="_blank" rel="noopener">Ver recepción</a>
       </div>
@@ -90,14 +127,39 @@
         <span>INDICACIONES PARA NUESTROS INVITADOS</span>
         <h2>Código de vestuario</h2>
       </div>
-      <picture class="dress-card">
-        <img src="assets/dress-code.png" alt="Código de vestuario. Mujeres: vestido elegante de noche; se reservan los colores blanco y negro. Hombres: traje completo; se reserva el color blanco.">
-      </picture>
+      <div class="dress-card">
+        <img class="dress-floral dress-floral-top" src="assets/floral-corner-transparent.png" alt="">
+        <img class="dress-floral dress-floral-bottom" src="assets/floral-corner-transparent.png" alt="">
+        <p class="dress-kicker">Dress Code</p>
+        <div class="dress-couple-art" role="img" aria-label="Ilustración de una pareja con vestuario elegante"></div>
+        <div class="dress-options">
+          <article class="dress-option">
+            <span class="dress-number">01</span>
+            <h3>Mujeres</h3>
+            <p class="dress-style">Vestido elegante<br>de noche</p>
+            <p class="reserved-label">Se reservan los colores</p>
+            <div class="color-list" aria-label="Blanco y negro">
+              <span><i class="color-swatch swatch-white"></i>Blanco</span>
+              <span><i class="color-swatch swatch-black"></i>Negro</span>
+            </div>
+          </article>
+          <article class="dress-option">
+            <span class="dress-number">02</span>
+            <h3>Hombres</h3>
+            <p class="dress-style">Traje<br>completo</p>
+            <p class="reserved-label">Se reserva el color</p>
+            <div class="color-list" aria-label="Blanco">
+              <span><i class="color-swatch swatch-white"></i>Blanco</span>
+            </div>
+          </article>
+        </div>
+        <p class="dress-note">Gracias por acompañarnos con elegancia</p>
+      </div>
     </section>
 
     <section class="event-summary">
       <p class="small-label">SÁBADO, 19 DE SEPTIEMBRE DE 2026</p>
-      <h2>Laura &amp; Jorge</h2>
+      <h2>Laura <em>&amp;</em> Jorge</h2>
       <div class="summary-grid">
         <article>
           <span>06:15 p. m.</span>
@@ -112,6 +174,11 @@
       </div>
       <p class="gift-note">Lluvia de sobres</p>
       <p class="closing">Será un honor contar con su presencia.</p>
+      <blockquote class="bible-verse">
+        <span class="verse-ornament" aria-hidden="true">✦</span>
+        <p>“Uno solo puede ser vencido, pero dos podrán resistir. Y además, la cuerda de tres hilos no se rompe fácilmente.”</p>
+        <cite>Eclesiastés 4:12</cite>
+      </blockquote>
     </section>
   </main>
 
@@ -122,6 +189,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="invitados.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
