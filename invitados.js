@@ -14,7 +14,7 @@ const INVITADOS = {
     cupos: 2
   },
 
-     "alfredo-nuz": {
+   "alfredo-nuz": {
     nombre: "Alfredo Nuñez",
     tratamiento: "",
     cupos: 2
