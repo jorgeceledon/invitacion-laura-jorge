@@ -43,4 +43,10 @@ const INVITADOS = {
     tratamiento: "y Sra.",
     cupos: 2
   },
+
+   "general": {
+    nombre: "",
+    tratamiento: "",
+    cupos: 1
+  },
 };
