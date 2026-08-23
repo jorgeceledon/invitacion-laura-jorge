@@ -44,8 +44,8 @@ const INVITADOS = {
     cupos: 2
   },
 
-   "general": {
-    nombre: "",
+   "gloria": {
+    nombre: "Gloria Oliveros Osorio",
     tratamiento: "",
     cupos: 1
   },
