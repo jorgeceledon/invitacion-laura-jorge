@@ -61,4 +61,11 @@ const INVITADOS = {
     tratamiento: "",
     cupos: 1
   },
+
+     "nestor": {
+    nombre: "Néstor de León",
+    tratamiento: "",
+    cupos: 2
+  },
+  
 };
